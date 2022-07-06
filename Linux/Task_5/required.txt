@@ -1,0 +1,21 @@
+- Trên máy ảo centos 6 hoặc 7 đã cài đặt, tiến hành cài đặt mô hình:
+Domain: wordpress.training.vn - dựng wordpress
+Domain: laravel.training.vn - dựng laravel
+  + Reverse proxy,
+  + mysql (bật remote mysql từ xa),
+  + vstpd,
+  + phpmyadmin,
+  + cho phép truy cập port 80, 443, 3306, 22
+  + build wordpress webiste trên chính mô hình trên, cho phep truy cập mysql từ xa và sử dụng được vsftpd
+  + build lavarel website trên chính mô hình trên, cho phép truy cập mysql từ xa và sử dụng được vsftpd
+
+
+- khi gõ domain A sẽ ra web A, domain B sẽ ra web B là vì sao? 
+- khi gõ IP thì nó sẽ ra domain A hay domain B? vì sao?
+- khi gõ IP nó sẽ ra 1 trang khác, gõ domain A sẽ ra 1 trang của domain A, gõ domain B sẽ ra 1 trang của domain B
+
+tại docroot của mỗi vhost, tạo file info.php
+<php?
+   system("id");
+?>
+sau đó truy cập vào domain/info.php nếu ra đúng user của domain đó thì ok.

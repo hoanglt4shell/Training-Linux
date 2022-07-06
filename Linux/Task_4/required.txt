@@ -1,0 +1,11 @@
+- Trên máy ảo centos 6 hoặc 7 đã cài đặt, tiến hành cài đặt mô hình:
+  - LAMP stack : build wordpress webiste trên chính mô hình trên
+  - LEMP stack : build wordpress webiste trên chính mô hình trên
+
+- trên mỗi mô hình build 2 web (tham khảo từ khoá Vhost, vhost là gì, ứng dụng của vhost trong web server)
+#wordpress.training.vn
+#laravel.training.vn
+
+- cài wordpress và laravel vào mỗi domain
+
+- thao tác trên máy ảo, thử trỏ /etc/hosts xem domain có nhận được đúng không
